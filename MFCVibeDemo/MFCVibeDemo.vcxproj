@@ -183,6 +183,7 @@
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="BuildingControlDlg.h" />
     <ClInclude Include="EtcStypDlg.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="MFCVibeDemo.h" />
@@ -192,6 +193,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BuildingControlDlg.cpp" />
     <ClCompile Include="EtcStypDlg.cpp" />
     <ClCompile Include="MFCVibeDemo.cpp" />
     <ClCompile Include="MFCVibeDemoDlg.cpp" />
