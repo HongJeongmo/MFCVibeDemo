@@ -1,11 +1,11 @@
-﻿// MFCVibeDemoDlg.cpp: 구현 파일
+﻿
+// MFCVibeDemoDlg.cpp: 구현 파일
 //
 
 #include "pch.h"
 #include "framework.h"
 #include "MFCVibeDemo.h"
 #include "MFCVibeDemoDlg.h"
-#include "BuildingControlDlg.h"
 #include "afxdialogex.h"
 
 #ifdef _DEBUG
@@ -65,7 +65,6 @@ BEGIN_MESSAGE_MAP(CMFCVibeDemoDlg, CDialogEx)
 	ON_WM_SYSCOMMAND()
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
-	ON_BN_CLICKED(IDC_BTN_BUILDING_CONTROL, &CMFCVibeDemoDlg::OnBnClickedBtnBuildingControl)
 END_MESSAGE_MAP()
 
 
@@ -152,13 +151,5 @@ void CMFCVibeDemoDlg::OnPaint()
 HCURSOR CMFCVibeDemoDlg::OnQueryDragIcon()
 {
 	return static_cast<HCURSOR>(m_hIcon);
-}
-
-
-
-void CMFCVibeDemoDlg::OnBnClickedBtnBuildingControl()
-{
-	CBuildingControlDlg dlg;
-	dlg.DoModal();
 }
 

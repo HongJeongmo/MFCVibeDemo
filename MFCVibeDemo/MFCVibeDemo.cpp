@@ -5,8 +5,6 @@
 #include "pch.h"
 #include "framework.h"
 #include "MFCVibeDemo.h"
-
-#include "BuildingControlDlg.h"
 #include "MFCVibeDemoDlg.h"
 
 #ifdef _DEBUG
@@ -73,8 +71,7 @@ BOOL CMFCVibeDemoApp::InitInstance()
 	// 적절한 내용으로 수정해야 합니다.
 	SetRegistryKey(_T("로컬 애플리케이션 마법사에서 생성된 애플리케이션"));
 
-	//CMFCVibeDemoDlg dlg;
-	CBuildingControlDlg dlg;
+	CMFCVibeDemoDlg dlg;
 	m_pMainWnd = &dlg;
 	INT_PTR nResponse = dlg.DoModal();
 	if (nResponse == IDOK)
