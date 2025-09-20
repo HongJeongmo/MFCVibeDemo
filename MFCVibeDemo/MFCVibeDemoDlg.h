@@ -1,4 +1,5 @@
-﻿// MFCVibeDemoDlg.h: 헤더 파일
+﻿
+// MFCVibeDemoDlg.h: 헤더 파일
 //
 
 #pragma once
@@ -29,7 +30,5 @@ protected:
 	afx_msg void OnSysCommand(UINT nID, LPARAM lParam);
 	afx_msg void OnPaint();
 	afx_msg HCURSOR OnQueryDragIcon();
-	afx_msg void OnBnClickedBuildingControl();
-	afx_msg void OnBnClickedEtcStyp();
 	DECLARE_MESSAGE_MAP()
 };

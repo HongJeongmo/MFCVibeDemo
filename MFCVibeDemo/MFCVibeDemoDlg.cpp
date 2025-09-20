@@ -1,10 +1,12 @@
-﻿#include "pch.h"
+﻿
+// MFCVibeDemoDlg.cpp: 구현 파일
+//
+
+#include "pch.h"
 #include "framework.h"
 #include "MFCVibeDemo.h"
 #include "MFCVibeDemoDlg.h"
 #include "afxdialogex.h"
-#include "BuildingControlDlg.h"
-#include "EtcStypDlg.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -63,8 +65,6 @@ BEGIN_MESSAGE_MAP(CMFCVibeDemoDlg, CDialogEx)
 	ON_WM_SYSCOMMAND()
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
-	ON_BN_CLICKED(IDC_BTN_BUILDING_CONTROL, &CMFCVibeDemoDlg::OnBnClickedBuildingControl)
-	ON_BN_CLICKED(IDC_BTN_ETC_STYP, &CMFCVibeDemoDlg::OnBnClickedEtcStyp)
 END_MESSAGE_MAP()
 
 
@@ -151,17 +151,5 @@ void CMFCVibeDemoDlg::OnPaint()
 HCURSOR CMFCVibeDemoDlg::OnQueryDragIcon()
 {
 	return static_cast<HCURSOR>(m_hIcon);
-}
-
-void CMFCVibeDemoDlg::OnBnClickedBuildingControl()
-{
-	CBuildingControlDlg dlg;
-	dlg.DoModal();
-}
-
-void CMFCVibeDemoDlg::OnBnClickedEtcStyp()
-{
-	CEtcStypDlg dlg;
-	dlg.DoModal();
 }
 
