@@ -183,6 +183,7 @@
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="EtcStypDlg.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="MFCVibeDemo.h" />
     <ClInclude Include="MFCVibeDemoDlg.h" />
@@ -191,6 +192,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="EtcStypDlg.cpp" />
     <ClCompile Include="MFCVibeDemo.cpp" />
     <ClCompile Include="MFCVibeDemoDlg.cpp" />
     <ClCompile Include="pch.cpp">
